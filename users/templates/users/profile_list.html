@@ -1,0 +1,17 @@
+{% extends 'users/base.html' %}
+{% block title %}Profiles{% endblock %}
+{% block content %}
+<h2>All Profiles</h2>
+<div class="row">
+    {% for profile in profiles %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ profile.profile_pic.url }}" class="card-img-top" alt="{{ profile.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ profile.name }}</h5>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

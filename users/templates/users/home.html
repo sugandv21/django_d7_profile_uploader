@@ -1,0 +1,8 @@
+{% extends 'users/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to Profile Picture Upload System</h1>
+    <p><a href="{% url 'upload_profile' %}" class="btn btn-primary mt-3">Upload Your Profile</a></p>
+</div>
+{% endblock %}
